@@ -1,0 +1,8 @@
+services:
+  fastapi:
+    build:
+      context: backend/.
+      dockerfile: Dockerfile.Container
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity
